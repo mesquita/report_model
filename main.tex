@@ -1,0 +1,83 @@
+\documentclass{tex/myclass}
+
+%-------------------------
+% TITLE
+%-------------------------
+\title{\faNewspaperO~~This is a report}
+
+%-------------------------
+% AUTHOR
+%-------------------------
+\author{Name A. B. C}
+
+%-------------------------
+% DATE
+%-------------------------
+\date{\today}
+
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+%-------------------------
+%-------------------------
+%-------------------------
+%-------------------------
+
+
+%-------------------------
+% SEC: INTRODUCTION
+%-------------------------
+\section{Introduction}
+\label{sec:introduction}
+
+A sentence. 
+
+Another one. 
+
+Fascinating, $\Wcal\Ocal\Wcal$.
+
+%-------------------------
+% SUBSEC: ONE SUBSECTION
+%-------------------------
+\subsection{One subsection}
+\label{subsec:one_subsection}
+A citation \faArrowRight~\cite{Goodfellow-et-al-2016}. Here's another one: \cite{duque2019}.
+
+%-------------------------
+% SEC: TABLES
+%-------------------------
+\section{Tables}
+\label{sec:tables}
+
+%-------------------------
+% TABLE my-table
+%-------------------------
+\vspace*{-0.5cm}
+\begin{table}[h!]
+	\centering
+	\caption{This is an example.}
+	\label{tab:my-table}
+	\resizebox{0.35\textwidth}{!}{%
+	\begin{tabular}{cccc}
+		Sample                 & Thing                  & Other thing \\ \hline
+		\multicolumn{1}{c|}{A} & \multicolumn{1}{c|}{1} & 2           \\
+		\multicolumn{1}{c|}{B} & \multicolumn{1}{c|}{3} & 4          
+	\end{tabular}%
+	}
+\end{table}
+
+%-------------------------
+% SEC: CONCLUSIONS
+%-------------------------
+\section{Conclusions}
+\label{sec:conclusions}
+We presented the report model.
+
+
+\bibliographystyle{IEEEtran}
+\bibliography{tex/mybib}
+
+
+\end{document}
